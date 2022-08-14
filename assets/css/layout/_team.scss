@@ -1,0 +1,48 @@
+/* Team Area CSS */
+.team-area {
+    background-color: #f2f2f2;
+    .single-team {
+        position: relative;
+        overflow: hidden;
+        @include max-xs {
+            margin-bottom: 20px;
+        }
+        @include min-sm {
+            margin-bottom: 20px;
+        }
+        @include min-md {
+            margin-bottom: 20px;
+        }
+        &:hover {
+            .team-content {
+                bottom: 0;
+            }
+        }
+        img {
+            width: 100%;
+            border: 1px solid #ddd;
+            padding: 3px;
+        }
+        .team-content {
+            position: absolute;
+            bottom: -96px;
+            background-color: #333;
+            color: #fff;
+            width: 100%;
+            left: 0;
+            text-align: center;
+            padding: 20px 0;
+            transition: .3s;
+            h4 {
+                text-transform: capitalize;
+                font-size: 22px;
+                span {
+                    display: block;
+                    font-size: 16px;
+                    text-transform: lowercase;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

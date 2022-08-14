@@ -1,0 +1,17 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Oleo+Script&family=Poppins:wght@400;500;600;700;800;900&family=Raleway:wght@400;500;600;700;800;900&display=swap');
+body {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+//FontSize Name 
+$size: (h1, 40px, 48px, 700), (h2, 32px, 38px, 700), (h3, 28px, 34px, 600), (h4, 24px, 28px, 600), (h5, 20px, 24px, 500), (h6, 16px, 22px, 400), (p, 16px, 22px, 400);
+@each $name, $font-size, $font-weight, $line-height in $size {
+    #{$name} {
+        font-size: $font-size;
+        font-weight: $line-height;
+        line-height: $font-weight;
+    }
+}

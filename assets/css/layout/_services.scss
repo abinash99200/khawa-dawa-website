@@ -1,0 +1,39 @@
+/* Service Area CSS */
+.services-area {
+   .single-services {
+      text-align: center;
+      margin-bottom: 30px;
+      border: 1px solid #ddd;
+      padding: 30px 20px;
+      position: relative;
+      &:hover {
+        &:after, &:before {
+            width: 100%;
+        } 
+      }
+      &:before, &:after {
+        position: absolute;
+        content: "";
+        width: 0;
+        background-color: tomato;     
+        transition: .3s;
+      }
+      &:before {
+        height: 3px;
+        top: -3px;
+        left: 0;
+      }
+      &:after {
+        height: 3px;
+        bottom: -3px;
+        right: 0;
+      }
+      img {
+        width: 50px;
+      }
+      h4 {
+        text-transform: capitalize;
+        margin: 20px 0;
+      }
+   }
+}

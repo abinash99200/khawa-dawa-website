@@ -1,0 +1,97 @@
+/* Reset CSS */
+/* Variable */
+@import 'variable';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+    color: $black;
+    transition: .3s;
+}
+ul {
+    list-style: none;
+}
+
+/* Baclground Image CSS */
+.bg {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    &:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #333;
+        opacity: .75;
+        z-index: -1;
+    }
+}
+
+/* Button CSS */
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 600;
+    &.btn-box {
+        background-color: $primary_color;
+        text-transform: capitalize;
+        transition: .3s;
+        &:hover {
+            background-color: $black;
+        }
+    }
+}
+
+/* Flex CSS */
+$flex: flex, inline-flex;
+@each $i in $flex {
+    .d-#{$i}{
+        display: $i;
+    }
+}
+
+/* Justify CSS */
+$justify: start, center, end, space-around, space-between, space-evenly;
+@each $i in $justify {
+    .justify-#{$i}{
+        justify-content: $i;
+    }
+}
+
+/* Align Item CSS */
+$align-items: start, center, end, space-around, space-between, space-evenly;
+@each $i in $align-items {
+    .align-#{$i}{
+        align-items: $i;
+    }
+}
+
+/* Margin & Padding */
+@for $var from 1 through 12 {
+    .mt-#{$var * 10} {
+        margin-top: $var * 10px;
+    }
+    .mb-#{$var * 10} {
+        margin-bottom: $var * 10px;
+    }
+    .pt-#{$var * 10} {
+        padding-top: $var * 10px;
+    }
+    .pb-#{$var * 10} {
+        padding-bottom: $var * 10px;
+    }
+}

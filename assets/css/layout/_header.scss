@@ -1,0 +1,74 @@
+/* Header CSS */
+.header-area {
+    position: absolute;
+    padding: 20px 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 4;
+    @include min-sm {     
+        position: inherit;
+        top: 0;
+        left: 0;
+        padding: 0;
+    }
+    @include max-xs {     
+        position: inherit;
+        top: 0;
+        left: 0;
+        padding: 0;
+    }
+    .logo {
+        @include max-xs {     
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        @include min-sm {     
+            position: absolute;
+            top: 15px;
+            left: 10px;
+        }
+        a {
+            img {
+                @include max-xs {     
+                    width: 160px;
+                }
+                @include min-sm {     
+                    width: 160px;
+                }
+            }
+        }
+    }
+    .menu {
+        ul {
+            @include max-xs {
+                display: none;
+            }
+            @include min-sm {
+                display: none;
+            }
+            li {
+                a {
+                    margin-left: 20px;
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #fff;
+                    &:hover {
+                       color: $primary_color;
+                    }
+                }
+            }
+        }
+    }
+}
+.slicknav_menu {
+	display: none;
+    @include max-xs {
+        display: block;
+    }
+    @include min-sm {
+        display: block;
+    }
+}

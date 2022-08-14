@@ -1,0 +1,21 @@
+/* CTA Top CSS */
+.cta-top-area {
+   color: #fff;
+   .section-title {
+      margin-bottom: 0;
+      h2 {
+        color: #fff !important;
+        margin: 20px 0;
+        padding-bottom: 16px;
+        @include max-xs {
+          line-height: 50px;
+        }
+        span {
+            font-size: 40px;
+            color: tomato;
+            font-style: italic;
+            font-weight: 900;
+        }
+      }
+   }
+}

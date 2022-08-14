@@ -1,0 +1,36 @@
+/* CTA Bottom Area CSS */
+.cta-bottom {
+    padding: 50px 0;
+    background-color: tomato;
+    color: #fff;
+    h2 {
+        text-transform: uppercase;
+        font-size: 50px;
+        text-align: right;
+        font-weight: 700;
+        @include max-xs {
+            font-size: 37px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        @include min-sm {
+            font-size: 34px;
+        }
+    }
+    a {
+        display: block;
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
+        margin: 8px;
+        @include max-xs {
+            text-align: center;
+        }
+        @include min-sm {
+            font-size: 18px;
+        }
+        i {
+          padding-right: 10px;
+        }
+    }
+}

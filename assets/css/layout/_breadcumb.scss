@@ -1,0 +1,20 @@
+/* Breadcumb CSS */
+.breadcumb-area {
+    padding: 150px 0 50px;
+    color: #fff;
+    h4 {
+        text-transform: capitalize;
+        font-size: 37px;
+    }
+    ul {
+        display: flex;
+        margin-top: 10px;
+        li {
+            text-transform: capitalize;
+            margin-right: 6px;
+            a {
+                color: #fff;
+            }
+        }
+    }
+}

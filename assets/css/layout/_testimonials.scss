@@ -1,0 +1,57 @@
+/* Testimonials CSS */
+.testimonial-area  {
+      .section-title {
+          span {
+            color: #fff;
+          }
+          h2 {
+            color: #fff;
+          }
+      }
+      .slick-dots {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 50px;
+        li {
+          display: inline-block;
+          margin: 0 5px;
+          &.slick-active {
+            button {
+              background-color: tomato;
+            }
+          }
+          button {
+            text-indent: -999px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 0;
+          }
+        }
+      }
+    .single-testimonial {
+        text-align: center;
+        padding: 0 25px;
+        color: #fff;
+        img {
+            width: 90px;
+            border-radius: 50%;
+            margin: 0 auto;
+            border: 1px dashed #ddd;
+            padding: 3px;
+          }
+          p {
+            margin: 20px 0;
+          }
+          h4 {
+            text-transform: capitalize;
+            span {
+              text-transform: lowercase;
+              display: block;
+              font-size: 16px;
+              font-weight: 400;
+            }
+          }
+      }
+}

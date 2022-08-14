@@ -1,0 +1,74 @@
+/* About Area CSS */
+.about-area {
+    .about-content {
+        p {
+            padding-bottom: 20px;
+        }
+    }
+    .about-img {
+        position: relative;
+        @include max-xs {
+            margin-top: 35px;
+        }
+        @include min-sm {
+            margin-top: 35px;
+        }
+        @include min-md {
+            margin-top: 35px;
+        }
+        @include min-lg {
+            margin-top: 35px;
+        }
+        img {
+            border: 1px solid $gray;
+            &:nth-child(1) {
+                max-width: 450px;
+                @include max-xs {
+                    width: 100%;
+                }
+            }
+            &:nth-child(2) {
+                position: absolute;
+                max-width: 370px;
+                right: 34px;
+                bottom: -48px;
+                @include max-xs {
+                    right: 0;
+                    bottom: 0;
+                    margin-top: 15px;
+                    position: inherit;
+                    width: 100%;
+                }
+                @include min-sm {
+                    right: -50px;
+                }
+                @include min-md {
+                    right: -0;
+                }
+                @include min-lg {
+                    left: 210px;
+                }
+                @include min-xl {
+                    right: -43px;
+                }
+            }
+        }
+        
+    }
+}
+/* About Page Area CSS */
+.about-page-area {
+    .about-img {
+        img {
+            width: 100%;
+            padding: 3px;
+            border: 1px solid #ddd;
+            margin-bottom: 70px;
+        }
+    }
+    .about-content {
+         p {
+            margin-bottom: 20px;
+        }
+    }
+}

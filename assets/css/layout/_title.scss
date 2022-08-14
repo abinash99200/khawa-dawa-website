@@ -1,0 +1,28 @@
+/* Title CSS */
+.title {
+    margin-bottom: 32px;
+    h4 {
+        text-transform: capitalize;
+        position: relative;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        &:before {
+            position: absolute;
+            content: "";
+            width: 60px;
+            height: 2px;
+            background-color: #ff7722;
+            bottom: 0;
+            left: 0;
+        }
+        &:after {
+            position: absolute;
+            content: "";
+            width: 40px;
+            height: 2px;
+            background-color: #ff7722;
+            bottom: -10px;
+            left: 0;
+        }
+    }
+}

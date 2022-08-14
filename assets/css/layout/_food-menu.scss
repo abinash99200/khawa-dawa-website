@@ -1,0 +1,48 @@
+/* Food Menu CSS */
+.food-menu {
+    background-color: #f2f2f2;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    .single-menu {
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ddd;
+        display: flex;
+        margin-bottom: 20px;
+        @include max-xs {
+            display: inherit;
+            text-align: center;
+        }
+        &:hover {
+            img {
+                border-radius: 50%;
+            }
+        }
+        img {
+            max-width: 100px;
+            margin-right: 20px;
+            transition: .3s;
+            @include max-xs {
+                display: block;
+                margin: 0 auto;
+                padding-bottom: 20px;
+            }
+        }
+        .menu-content {
+            h4 {
+                font-size: 20px;
+                border: 1px dashed #ddd;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+                @include max-xs {
+                    margin-bottom: 0;
+                }
+                span {
+                    float: right;
+                    color: #ff6347;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+/* Blog Area CSS */
+.blog-area {
+    background-color: #ddd;
+    .blog-page {
+        .single-blog {
+            margin-bottom: 25px;
+        }
+    }
+    .single-blog {
+        background-color: #fff;
+        @include max-xs {
+            margin-bottom: 20px;
+        }
+        @include min-sm {
+            margin-bottom: 20px;
+        }
+        @include min-md {
+            margin-bottom: 20px;
+        }
+        img {
+            width: 100%;
+        }
+        .blog-meta {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 10px 0;
+            border-bottom: 1px dashed #333;
+            a {
+                display: block;
+                text-transform: capitalize;
+                transition: .3s;
+                font-weight: 600;
+                &:hover {
+                    color: tomato;
+                  }
+              }
+          }
+    }
+}
+
+
+.blog-content {
+    padding: 10px 30px;
+    h4 {
+        text-transform: capitalize;
+      }
+      p {
+        margin: 10px 0;
+        line-height: 25px;
+      }
+      a {
+        text-transform: capitalize;
+        font-style: italic;
+        transition: .3s;
+        &:hover {
+            color: tomato;
+          }
+        
+      }
+  }
